@@ -1,4 +1,4 @@
-# Opeyemi Oluwadare - Interactive DevOps CV
+# Opeyemi Oluwadare - CV
 
 This repository contains the source code for an interactive online Curriculum Vitae (CV) for Opeyemi Oluwadare, a DevOps professional. This single-page application (SPA) is designed to be easily browsable, showcasing professional experience, technical skills, education, certifications, and volunteer work in a clean, modern, and responsive layout.
 
