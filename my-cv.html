@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Opeyemi Oluwadare - DevOps Professional</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
+            }
+            .section-title {
+                /* Reworked: Increased font size to 5xl and font-weight to black for maximum distinction */
+                @apply text-5xl font-black text-slate-800 mb-6 border-b-2 border-sky-500 pb-2;
+            }
+            .card {
+                @apply bg-white p-6 rounded-lg shadow-lg mb-6;
+            }
+            .nav-link {
+                @apply px-3 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-sky-100 hover:text-sky-700 transition-colors;
+            }
+            .nav-link-mobile {
+                @apply block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-sky-100 hover:text-sky-700 transition-colors;
+            }
+            .tag {
+                @apply inline-block bg-sky-100 text-sky-700 text-xs font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full;
+            }
+            /* Removed .credly-badge-placeholder as actual embeds are used */
+        </style>
+    </head>
+    <body class="bg-slate-50 text-slate-700">
+        <nav class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <a href="#" class="text-xl font-bold text-sky-600"
+                            >Opeyemi Oluwadare</a
+                        >
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#summary" class="nav-link">Summary</a>
+                            <a href="#skills" class="nav-link">Skills</a>
+                            <a href="#experience" class="nav-link"
+                                >Experience</a
+                            >
+                            <a href="#education" class="nav-link">Education</a>
+                            <a href="#credly-badges" class="nav-link">Badges</a>
+                            <a href="#volunteer" class="nav-link">Volunteer</a>
+                        </div>
+                    </div>
+                    <div class="-mr-2 flex md:hidden">
+                        <button
+                            type="button"
+                            id="mobile-menu-button"
+                            class="bg-white inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-slate-500 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500"
+                            aria-controls="mobile-menu"
+                            aria-expanded="false"
+                        >
+                            <span class="sr-only">Open main menu</span>
+                            <svg
+                                class="block h-6 w-6"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                />
+                            </svg>
+                            <svg
+                                class="hidden h-6 w-6"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#summary" class="nav-link-mobile">Summary</a>
+                    <a href="#skills" class="nav-link-mobile">Skills</a>
+                    <a href="#experience" class="nav-link-mobile">Experience</a>
+                    <a href="#education" class="nav-link-mobile">Education</a>
+                    <a href="#credly-badges" class="nav-link-mobile">Badges</a>
+                    <a href="#volunteer" class="nav-link-mobile">Volunteer</a>
+                </div>
+            </div>
+        </nav>
+
+        <header class="bg-sky-600 text-white pt-20 pb-12">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold">
+                    Opeyemi Oluwadare
+                </h1>
+                <p class="mt-3 text-xl md:text-2xl text-sky-100">
+                    Platform Integration Engineer
+                </p>
+                <div
+                    class="mt-6 text-sky-200 space-x-6 flex justify-center items-center flex-wrap"
+                >
+                    <span class="inline-flex items-center">
+                        <svg
+                            class="h-5 w-5 mr-1.5"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435A1 1 0 018.691 8H12.5a1 1 0 00.981-.684l1.642-5.025A1 1 0 0116.118 2H18a1 1 0 011 1v1.586l-2.939 2.939a1 1 0 01-1.414 0L12 4.414l-2.546 2.546a1 1 0 01-1.414 0L4.293 4.293A1 1 0 014 3.586V3z"
+                            ></path>
+                            <path
+                                d="M2 7a1 1 0 011-1h14a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V7zm2 4a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2zm5 0a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1v-2zm5 0a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1v-2z"
+                            ></path>
+                        </svg>
+                        08167877918
+                    </span>
+                    <span class="inline-flex items-center">
+                        <svg
+                            class="h-5 w-5 mr-1.5"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                            ></path>
+                            <path
+                                d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                            ></path>
+                        </svg>
+                        oluwadareopeyemis1@gmail.com
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <main class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+            <section id="summary" class="pt-10 -mt-10">
+                <h2 class="section-title">Professional Summary</h2>
+                <div class="card">
+                    <p class="text-lg leading-relaxed">
+                        Highly motivated and results-oriented professional with
+                        a strong background in platform and integration support,
+                        application management, and a passion for optimizing
+                        software delivery pipelines. Proven ability to deploy,
+                        manage, and support microservices and containerized
+                        applications, automate processes with scripting and
+                        configuration management tools, and improve system
+                        uptime and efficiency. Seeking a challenging DevOps role
+                        to leverage expertise in cloud platforms, CI/CD, and
+                        infrastructure as code to drive seamless development and
+                        operations.
+                    </p>
+                </div>
+            </section>
+            <hr class="my-12 border-slate-300" />
+
+            <section id="skills" class="pt-10 -mt-10">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="card">
+                    <p class="mb-4 text-slate-600">
+                        Proficient in a diverse range of technologies and tools
+                        essential for modern DevOps practices:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3
+                                class="text-lg font-semibold text-slate-700 mb-2"
+                            >
+                                Cloud Platforms:
+                            </h3>
+                            <p>
+                                <span class="tag">Google Cloud Platform</span>
+                                <span class="tag">Azure Fundamentals</span>
+                            </p>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-lg font-semibold text-slate-700 mb-2"
+                            >
+                                Tools & Software:
+                            </h3>
+                            <p>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Ansible</span>
+                                <span class="tag">OpenShift</span>
+                                <span class="tag">API Connect</span>
+                                <span class="tag">Linux</span>
+                                <span class="tag">Elastic Search</span>
+                                <span class="tag">AppDynamics</span>
+                                <span class="tag">Git</span>
+                                <span class="tag">Kubectl/oc</span>
+                                <span class="tag">PL/SQL</span>
+                                <span class="tag">Microsoft IIS</span>
+                                <span class="tag">Oracle WebLogic server</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">Kubernetes</span>
+                            </p>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-lg font-semibold text-slate-700 mb-2"
+                            >
+                                Programming Languages:
+                            </h3>
+                            <p>
+                                <span class="tag">Python</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Finacle Scripting</span>
+                                <span class="tag">Bash</span>
+                                <span class="tag">Ansible</span>
+                                <span class="tag">VBA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-lg font-semibold text-slate-700 mb-2"
+                            >
+                                Core Competencies:
+                            </h3>
+                            <p>
+                                <span class="tag">Cluster management</span>
+                                <span class="tag">Monitoring and Logging</span>
+                                <span class="tag">Scripting</span>
+                                <span class="tag"
+                                    >Configuration management</span
+                                >
+                                <span class="tag">Operating systems</span>
+                                <span class="tag">Incident Management</span>
+                                <span class="tag">CI/CD</span>
+                                <span class="tag">Automation</span>
+                                <span class="tag">Microservices</span>
+                                <span class="tag">Containerization</span>
+                                <span class="tag">API Management</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-12 border-slate-300" />
+
+            <section id="experience" class="pt-10 -mt-10">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="mb-4 text-slate-600">
+                    Detailed overview of my roles, responsibilities, and key
+                    achievements in dynamic banking environments.
+                </p>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-slate-700">
+                        Platforms and Integration Support
+                    </h3>
+                    <p class="text-md text-sky-600 font-medium">
+                        Enterprise Core Systems, Stanbic IBTC Bank
+                    </p>
+                    <p class="text-sm text-slate-500 mb-3">
+                        October 2023 - Present
+                    </p>
+                    <ul
+                        class="list-disc list-outside ml-5 space-y-2 text-slate-600"
+                    >
+                        <li>
+                            Successfully deployed, operated, and managed a vast
+                            ecosystem of over 400 production and disaster
+                            recovery (DR) microservices using our custom-built
+                            Ansible pipelines, enabling seamless integration for
+                            both internal and external customers with the bank's
+                            core systems.
+                        </li>
+                        <li>
+                            Reduced developer wait time by 80% by leveraging
+                            Ansible to orchestrate plays for automated log
+                            delivery.
+                        </li>
+                        <li>
+                            Developed and implemented Ansible-driven
+                            self-healing playbooks for critical services and
+                            servers, significantly reducing service failures and
+                            enhancing uptime and reliability.
+                        </li>
+                        <li>
+                            Increased income by an average of 100-million-naira
+                            month on month basis by reviewing and remediating
+                            failed account maintenance charges DB jobs.
+                        </li>
+                        <li>
+                            Championed integration engagements, collaborating
+                            effectively with network, infrastructure, and
+                            governance teams to ensure successful project
+                            delivery.
+                        </li>
+                        <li>
+                            Designed and managed robust pipelines to ensure
+                            seamless and efficient delivery of solutions to the
+                            business.
+                        </li>
+                        <li>
+                            Deployed, managed, and supported over 50 open APIs
+                            using solutions like IBM's APIC for business
+                            scalability, significantly contributing to the NIBSS
+                            open banking initiative within the bank.
+                        </li>
+                        <li>
+                            Deployed, managed, and supported containerized
+                            applications (images) on OpenShift (leveraging
+                            Kubernetes and Docker technologies), utilizing tools
+                            such as Azure CR, and Ansible.
+                        </li>
+                        <li>
+                            Implemented customized functionality on Finacle by
+                            creating APIs using Finacle scripting, which were
+                            leveraged within customer-facing solutions to enable
+                            basic banking operations like account opening
+                            directly from their homes and reduced in-branch
+                            walk-ins by 60%.
+                        </li>
+                        <li>
+                            Conducted data cleanups for accurate data
+                            representations to aid monitoring and issue
+                            resolutions leveraging tools like PL/SQL.
+                        </li>
+                        <li>
+                            Actively engaged in knowledge sharing initiatives
+                            within the team to prevent knowledge gaps and foster
+                            a collaborative learning environment.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card mt-6 mb-12">
+                    <h3 class="text-xl font-semibold text-slate-700">
+                        Application Support Analyst
+                    </h3>
+                    <p class="text-md text-sky-600 font-medium">
+                        Union Bank of Nigeria
+                    </p>
+                    <p class="text-sm text-slate-500 mb-3">
+                        August 2022 - August 2023
+                    </p>
+                    <ul
+                        class="list-disc list-outside ml-5 space-y-2 text-slate-600"
+                    >
+                        <li>
+                            Reduced report generation time by 60% by developing
+                            Excel macros and VBA scripts to automate monitoring
+                            processes and report generation.
+                        </li>
+                        <li>
+                            Increased the uptime of a critical branch
+                            application to 99% by developing a batch script to
+                            alternate the switching of the application between
+                            two application pools on IIS.
+                        </li>
+                        <li>
+                            Deployed and managed .NET and Java applications on
+                            Microsoft IIS and Oracle WebLogic server
+                            respectively based on business demands.
+                        </li>
+                        <li>
+                            Reduced deployment time by 50% by documenting
+                            endpoints used in test environments and matching
+                            them with corresponding production values.
+                        </li>
+                        <li>
+                            Improved application migration process by 30% by
+                            collaborating with development teams to identify
+                            migration challenges and designing a process
+                            checklist.
+                        </li>
+                        <li>
+                            Troubleshot, monitored, and resolved cases involving
+                            all internally built applications and services,
+                            performing Root Cause Analysis and ensuring timely
+                            resolution.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="my-12 border-slate-300" />
+
+            <section id="credly-badges" class="pt-10 -mt-10">
+                <h2 class="section-title">Credly Badges</h2>
+                <p class="mb-4 text-slate-600">
+                    Showcasing my verified digital credentials and
+                    certifications earned through various platforms.
+                </p>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                    <div class="card !mb-0 flex items-center justify-center">
+                        <iframe
+                            src="https://www.credly.com/badges/7c9c2ed1-d269-4048-b825-1aced1a7164b/public_url"
+                            width="150"
+                            height="270"
+                            frameborder="0"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div class="card !mb-0 flex items-center justify-center">
+                        <iframe
+                            src="https://www.credly.com/badges/e381a674-c226-4313-896a-eb18823a954c/public_url"
+                            width="150"
+                            height="270"
+                            frameborder="0"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div class="card !mb-0 flex items-center justify-center">
+                        <iframe
+                            src="https://www.credly.com/badges/708349af-24c3-4700-9732-f20440c59daf/public_url"
+                            width="150"
+                            height="270"
+                            frameborder="0"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div class="card !mb-0 flex items-center justify-center">
+                        <iframe
+                            src="https://www.credly.com/badges/f139e161-3654-472a-a921-0b82cc4e287d/public_url"
+                            width="150"
+                            height="270"
+                            frameborder="0"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-12 border-slate-300" />
+
+            <section id="education" class="pt-10 -mt-10">
+                <h2 class="section-title">Education & Certifications</h2>
+                <p class="mb-4 text-slate-600">
+                    My academic qualifications and professional certifications
+                    that underpin my technical expertise.
+                </p>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                    <div class="card !mb-0">
+                        <h3 class="text-lg font-semibold text-slate-700">
+                            B.Sc. Food Science and Technology
+                        </h3>
+                        <p class="text-slate-600">
+                            Federal University of Agriculture, Abeokuta
+                        </p>
+                    </div>
+
+                    <div class="card !mb-0">
+                        <h3 class="text-lg font-semibold text-slate-700">
+                            Google Cloud, Associate Cloud Engineer
+                        </h3>
+                        <p class="text-slate-600">Google Cloud, 2024</p>
+                    </div>
+
+                    <div class="card !mb-0">
+                        <h3 class="text-lg font-semibold text-slate-700">
+                            Azure Fundamentals
+                        </h3>
+                        <p class="text-slate-600">Microsoft, 2023</p>
+                    </div>
+
+                    <div class="card !mb-0">
+                        <h3 class="text-lg font-semibold text-slate-700">
+                            Introduction to Programming
+                        </h3>
+                        <p class="text-slate-600">Udacity, 2023</p>
+                    </div>
+
+                    <div class="card !mb-0">
+                        <h3 class="text-lg font-semibold text-slate-700">
+                            ITIL v3
+                        </h3>
+                        <p class="text-slate-600">Elev8, 2023</p>
+                    </div>
+
+                    <div class="card !mb-0">
+                        <h3 class="text-lg font-semibold text-slate-700">
+                            Data and Analytics
+                        </h3>
+                        <p class="text-slate-600">ALX & Explore Al, 2023</p>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-12 border-slate-300" />
+
+            <section id="volunteer" class="pt-10 -mt-10">
+                <h2 class="section-title">Volunteer Experience</h2>
+                <p class="mb-4 text-slate-600">
+                    Engagements that reflect my commitment to leadership,
+                    mentorship, and community development.
+                </p>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-slate-700">
+                        Founder
+                    </h3>
+                    <p class="text-md text-sky-600 font-medium">
+                        Students to Changemakers, Nigeria
+                    </p>
+                    <p class="text-sm text-slate-500 mb-3">
+                        January 2024 - Present
+                    </p>
+                    <ul
+                        class="list-disc list-outside ml-5 space-y-2 text-slate-600"
+                    >
+                        <li>
+                            Mentored over 200 teens in leadership, discipline,
+                            and technology, leading to a 20% increase in digital
+                            awareness across underserved areas in Ogun State.
+                        </li>
+                        <li>
+                            Developed training programs that improved academic
+                            performance and instilled teamwork skills, resulting
+                            in a 25% higher retention rate within the
+                            foundation's program.
+                        </li>
+                    </ul>
+                </div>
+                <div class="card mt-6">
+                    <h3 class="text-xl font-semibold text-slate-700">
+                        Project Manager
+                    </h3>
+                    <p class="text-md text-sky-600 font-medium">
+                        Do-Nation, Nigeria
+                    </p>
+                    <p class="text-sm text-slate-500 mb-3">
+                        January 2024 - Present
+                    </p>
+                    <p class="text-slate-600">
+                        An organization aimed at improving the living conditions
+                        of teenagers in underserved areas through arts.
+                    </p>
+                </div>
+                <div class="card mt-6">
+                    <h3 class="text-xl font-semibold text-slate-700">
+                        Coordinator in Chief
+                    </h3>
+                    <p class="text-md text-sky-600 font-medium">
+                        Man O' War, Nigeria (FUNAAB)
+                    </p>
+                    <p class="text-sm text-slate-500 mb-3">
+                        October 2018 - November 2019
+                    </p>
+                    <ul
+                        class="list-disc list-outside ml-5 space-y-2 text-slate-600"
+                    >
+                        <li>
+                            Led the administration of the club for the academic
+                            year.
+                        </li>
+                        <li>
+                            Maintained an excellent relationship with the school
+                            administration and earned access to grants which was
+                            used to sponsor over 20 club members for leadership
+                            courses leading to 30% increase in personal
+                            effectiveness.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer
+            class="text-center py-8 text-slate-500 border-t border-slate-200"
+        >
+            <p>
+                &copy; <span id="currentYear"></span> Opeyemi Oluwadare. All
+                rights reserved.
+            </p>
+        </footer>
+
+        <script>
+            // Mobile menu toggle
+            const mobileMenuButton =
+                document.getElementById("mobile-menu-button");
+            const mobileMenu = document.getElementById("mobile-menu");
+            const svgs = mobileMenuButton.querySelectorAll("svg");
+
+            mobileMenuButton.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+                svgs[0].classList.toggle("hidden"); // Burger icon
+                svgs[1].classList.toggle("hidden"); // Close icon
+                const isExpanded =
+                    mobileMenuButton.getAttribute("aria-expanded") === "true" ||
+                    false;
+                mobileMenuButton.setAttribute("aria-expanded", !isExpanded);
+            });
+
+            // Smooth scroll for navigation links and close mobile menu on click
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href");
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        // If mobile menu is open, close it
+                        if (!mobileMenu.classList.contains("hidden")) {
+                            mobileMenu.classList.add("hidden");
+                            svgs[0].classList.remove("hidden");
+                            svgs[1].classList.add("hidden");
+                            mobileMenuButton.setAttribute(
+                                "aria-expanded",
+                                "false",
+                            );
+                        }
+
+                        // Smooth scroll
+                        const offset = 80; // Adjust this value based on your fixed header's height
+                        const bodyRect =
+                            document.body.getBoundingClientRect().top;
+                        const elementRect =
+                            targetElement.getBoundingClientRect().top;
+                        const elementPosition = elementRect - bodyRect;
+                        const offsetPosition = elementPosition - offset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth",
+                        });
+                    }
+                });
+            });
+
+            // Set current year in footer
+            document.getElementById("currentYear").textContent =
+                new Date().getFullYear();
+        </script>
+    </body>
+</html>
