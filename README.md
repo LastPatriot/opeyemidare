@@ -22,48 +22,8 @@ This repository contains the source code for an interactive online Curriculum Vi
 * **JavaScript:** For interactive elements like the mobile navigation toggle and smooth scrolling.
 * **Credly Embeds:** External scripts used for dynamically displaying verified digital badges.
 
-## 🚀 Setup and Usage
-
-This CV is a single HTML file, making it incredibly easy to set up and deploy.
-
-1.  **Clone the repository:**
-    ```bash
-    git clone <repository_url>
-    cd <repository_name>
-    ```
-    (Replace `<repository_url>` with the actual URL of this repository and `<repository_name>` with the desired local folder name.)
-
-2.  **Open the file:**
-    Simply open the `index.html` file in your preferred web browser.
-
-    ```bash
-    open index.html
-    # Or navigate to the file in your file explorer and double-click it.
-    ```
-
-3.  **Deployment (Optional but Recommended):**
-    For wider accessibility, you can host this HTML file on a static site hosting service like:
-    * [GitHub Pages](https://pages.github.com/)
-    * [Netlify](https://www.netlify.com/)
-    * [Vercel](https://vercel.com/)
-    * Any web server
-
-    These services make it easy to deploy your static site and provide a public URL.
-
-## ⚠️ Important Note on Credly Badges Display
-
-The Credly badges are embedded using their official JavaScript embed code. For security reasons, **interactive preview environments (like some online code editors or sandboxes) often block the execution of external JavaScript**.
-
-Therefore, while the code for the badges is correctly implemented:
-* The badges **will likely not display** if you are viewing the `index.html` file in a restricted preview environment.
-* The badges **will display correctly** when the HTML file is hosted on a live web server (e.g., GitHub Pages, Netlify, Vercel, or your own domain), as these environments allow external scripts to run.
-
 ## 📧 Contact
 
-For professional inquiries, you can reach Opeyemi Oluwadare at:
+For inquiries, you can reach Opeyemi Oluwadare at:
 * **Phone:** 08167877918
 * **Email:** oluwadareopeyemis1@gmail.com
-
-## 📄 License
-
-This project is open-sourced under the MIT License. See the [LICENSE](LICENSE) file for more details.
